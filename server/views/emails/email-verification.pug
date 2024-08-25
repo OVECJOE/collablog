@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h2 Verify your account, #{username}
+  p Hello and welcome to Collablog! Please click the button below to verify your account.
+  +button(verificationLink, 'Verify account →')
+  p If you can't click the above button please visit #{verificationLink}
+  br
+  p Thanks, Collablog Team

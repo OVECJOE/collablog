@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "1.0.0",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.mjs",
+    "test": "jest",
+    "format": "eslint . --ext .js,.jsx,.mjs --report-unused-disable-directives --max-warnings 0",
+    "format:fix": "npm run format -- --fix",
+    "i-ncu": "npm i && ncu && ncu -u && npm i"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "email-templates": "^12.0.1",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "html-to-text": "^9.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "juice": "^11.0.0",
+    "marked": "^14.0.0",
+    "mongoose": "^8.5.3",
+    "nodemailer": "^6.9.14",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "pug": "^3.0.3",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=20.11.0 <21.0.0"
+  }
+}

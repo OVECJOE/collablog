@@ -1,0 +1,38 @@
+{
+  "name": "collablog",
+  "version": "1.0.0",
+  "description": "CollabBlog is a innovative blogging platform designed to foster teamwork and collective creativity. Unlike traditional blogging sites, CollabBlog requires a minimum of two authors for every post, ensuring diverse perspectives and richer content.",
+  "scripts": {
+    "test": "npm run --prefix server test & npm run --prefix client test",
+    "start:server": "npm start --prefix server",
+    "start:client": "npm run --prefix client dev",
+    "format": "npm run --prefix server format & npm run --prefix client format",
+    "i-ncu": "npm i && ncu && ncu -u && npm i",
+    "install-all": "npm i && cd server && npm i && cd ../client && npm i",
+    "install-update": "npm run i-ncu && npm run --prefix server i-ncu && npm run --prefix client i-ncu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OVECJOE/collablog.git"
+  },
+  "keywords": [
+    "blogging",
+    "collaboration",
+    "innovative",
+    "mern"
+  ],
+  "author": "Victor Ohachor <ovecjoe123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OVECJOE/collablog/issues"
+  },
+  "homepage": "https://github.com/OVECJOE/collablog#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "npm-check-updates": "^17.1.0"
+  },
+  "engines": {
+    "node": ">=20.11.0 <21.0.0",
+    "vscode": "^1.22.0"
+  }
+}
